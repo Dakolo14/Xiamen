@@ -1086,7 +1086,7 @@ footer {
     text-align: center;
     padding: 0;
     /* Placeholder background image - replace as needed per page */
-    background-image: url('assets/images/page-hero-placeholder.jpg');
+    background-image: url('assets/images/about-cover.jpg');
 }
 
 .page-hero::before {
