@@ -153,9 +153,54 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.hero-buttons .cta-button, .hero-buttons .secondary-button {
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .cta-button, 
+.hero-buttons .secondary-button {
     font-size: 18px;
     padding: 12px 25px;
+    margin: 5px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .cta-button,
+.cta-buttons .secondary-button {
+    margin: 5px;
+}
+
+@media (max-width: 480px) {
+    .hero-buttons,
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero-buttons .cta-button,
+    .hero-buttons .secondary-button,
+    .cta-buttons .cta-button,
+    .cta-buttons .secondary-button {
+        width: 100%;
+        max-width: 280px;
+        margin: 5px 0;
+    }
+
+    .how-it-works .cta-button {
+        width: 100%;
+        max-width: 280px;
+        margin: 10px auto;
+    }
 }
 
 /* About Us Section Styling */
