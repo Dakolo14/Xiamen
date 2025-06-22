@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post Title - Xiamen Agro Limited</title>
-    <meta name="description" content="Read the full article on [Blog Post Title] from Xiamen Agro Limited. Insights on agriculture in Nigeria and Ghana.">
+    <title>Sitemap - Xiamen Agro Limited</title>
+    <meta name="description" content="Sitemap for Xiamen Agro Limited. Find all important pages and links for easy navigation.">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+    <style>
+        .sitemap-section {
+            padding: 48px 0 64px 0;
+        }
+        .sitemap-section h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            color: #28a745;
+            text-align: left;
+        }
+        .sitemap-list {
+            list-style: none;
+            padding-left: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .sitemap-list > li {
+            font-size: 1.15rem;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+        .sitemap-list a {
+            color: #222;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .sitemap-list a:hover {
+            color: #28a745;
+            text-decoration: underline;
+        }
+        .sitemap-list ul {
+            list-style: disc inside;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 24px;
+            padding-left: 16px;
+        }
+        .sitemap-list ul li {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 8px;
+        }
+        .sitemap-list, .sitemap-list > li, .sitemap-list a, .sitemap-list ul, .sitemap-list ul li {
+            color: #fff !important;
+        }
+        @media (max-width: 600px) {
+            .sitemap-section {
+                padding: 32px 0 32px 0;
+            }
+            .sitemap-list {
+                max-width: 100%;
+            }
+        }
+    </style>
     <!-- Favicon will be added here once the file is provided -->
 </head>
 <body>
@@ -54,26 +109,40 @@
     <main>
         <section class="page-hero">
             <div class="container">
-                <h1 id="blog-post-title" style="font-size: 32px;">Loading...</h1>
-                <p class="breadcrumb"><a href="index.html">Home</a> / <a href="blog.html">Blog</a> / <span id="current-post-title"></span></p>
+                <h1>Sitemap</h1>
+                <p class="breadcrumb"><a href="index.html">Home</a> / Sitemap</p>
             </div>
         </section>
-
-        <section class="page-content">
-            <div class="container blog-detail-content">
-                <img src="" alt="Blog Post Image" id="blog-post-image">
-                <div class="post-meta">
-                    <div class="author-info">
-                        <div class="author-avatar" id="blog-author-avatar"></div>
-                        <span class="author-name" id="blog-author-name"></span>
-                        <span class="post-date" id="blog-post-date"></span>
-                    </div>
-                    <div class="post-tags" id="blog-post-tags"></div>
-                </div>
-                <div class="blog-post-body" id="blog-post-body">
-                    <!-- Blog post content will be loaded here -->
-                    <p>Loading blog post content...</p>
-                </div>
+        <section class="sitemap-section">
+            <div class="container">
+                <h2>Website Sitemap</h2>
+                <ul class="sitemap-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="services.html">Services</a>
+                        <ul>
+                            <!-- Add service detail pages here if available -->
+                            <!-- <li><a href="service1.html">Farm Mechanization</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a>
+                        <ul>
+                            <li><a href="blog-detail.html">Sample Blog Post</a></li>
+                            <!-- Add more blog post links if desired -->
+                        </ul>
+                    </li>
+                    <li><a href="apply.html">Book a Call / Apply</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li>Legal
+                        <ul>
+                            <li><a href="#">Licenses</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -147,78 +216,6 @@
         &#x2191;
     </button>
 
-    <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      var notice = document.getElementById('cookie-notice');
-      if (!localStorage.getItem('cookieConsent')) {
-        notice.style.display = 'flex';
-      }
-      document.getElementById('accept-cookies').onclick = function() {
-        localStorage.setItem('cookieConsent', 'accepted');
-        notice.style.display = 'none';
-      };
-      document.getElementById('reject-cookies').onclick = function() {
-        localStorage.setItem('cookieConsent', 'rejected');
-        notice.style.display = 'none';
-      };
-    });
-    </script>
     <script src="script.js"></script>
-    <script>
-        // Basic script to load blog post data (requires further development)
-        document.addEventListener('DOMContentLoaded', () => {
-            const params = new URLSearchParams(window.location.search);
-            const postId = params.get('id');
-
-            if (postId) {
-                fetch('blog-posts.json')
-                    .then(response => response.json())
-                    .then(posts => {
-                        const post = posts.find(p => p.id == postId);
-                        if (post) {
-                            document.getElementById('blog-post-title').textContent = post.title;
-                            document.getElementById('current-post-title').textContent = post.title;
-                            document.getElementById('blog-post-image').src = post.image;
-                            document.getElementById('blog-author-avatar').textContent = post.author_avatar_initial;
-                            document.getElementById('blog-author-name').textContent = post.author;
-                            document.getElementById('blog-post-date').textContent = post.date;
-                            document.getElementById('blog-post-body').innerHTML = post.content;
-
-                            const tagsContainer = document.getElementById('blog-post-tags');
-                            tagsContainer.innerHTML = ''; // Clear existing tags
-                            post.tags.forEach(tag => {
-                                const span = document.createElement('span');
-                                span.textContent = tag;
-                                tagsContainer.appendChild(span);
-                            });
-
-                             // Update meta description
-                             const metaDescription = document.querySelector('meta[name="description"]');
-                             if (metaDescription) {
-                                 metaDescription.setAttribute('content', `Read the full article on ${post.title} from Xiamen Agro Limited. Insights on agriculture in Nigeria and Ghana.`);
-                             }
-
-                             // Update document title
-                            document.title = `${post.title} - Xiamen Agro Limited`;
-
-                        } else {
-                            document.getElementById('blog-post-title').textContent = 'Post Not Found';
-                            document.getElementById('current-post-title').textContent = 'Not Found';
-                            document.getElementById('blog-post-body').innerHTML = '<p>The requested blog post could not be found.</p>';
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error fetching blog posts:', error);
-                        document.getElementById('blog-post-title').textContent = 'Error Loading Post';
-                         document.getElementById('current-post-title').textContent = 'Error';
-                        document.getElementById('blog-post-body').innerHTML = '<p>There was an error loading the blog post.</p>';
-                    });
-            } else {
-                 document.getElementById('blog-post-title').textContent = 'No Post Specified';
-                 document.getElementById('current-post-title').textContent = 'No Post';
-                document.getElementById('blog-post-body').innerHTML = '<p>No blog post ID was specified.</p>';
-            }
-        });
-    </script>
 </body>
 </html> 
