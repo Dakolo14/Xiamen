@@ -1,215 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog - Xiamen Agro Limited</title>
-    <meta name="description" content="Read the latest articles and insights from Xiamen Agro Limited on agricultural trends, tips for farming, market analysis, and updates on our operations in Nigeria and Ghana.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+    <meta
+      name="description"
+      content="Read the latest articles and insights from Xiamen Agro Limited on agricultural trends, tips for farming, market analysis, and updates on our operations in Nigeria and Ghana."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
     <!-- Favicon will be added here once the file is provided -->
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
-                <img src="assets/images/logo.png" alt="Xiamen Agro Logo">
-                <span>Xiamen Agro</span>
-            </div>
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-             <button class="cta-button desktop-cta" onclick="window.location.href='apply.html'">Book a Call</button>
-            <div class="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">
+          <svg width="80" height="80" viewBox="0 0 100 100">
+            <circle
+              cx="50"
+              cy="50"
+              r="45"
+              fill="none"
+              stroke="#28a745"
+              stroke-width="3"
+              stroke-dasharray="283"
+              stroke-dashoffset="75"
+              stroke-linecap="round"
+            >
+              <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 50 50"
+                to="360 50 50"
+                dur="1.5s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle
+              cx="50"
+              cy="50"
+              r="35"
+              fill="none"
+              stroke="#20803d"
+              stroke-width="3"
+              stroke-dasharray="220"
+              stroke-dashoffset="55"
+              stroke-linecap="round"
+            >
+              <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="360 50 50"
+                to="0 50 50"
+                dur="1.2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+          </svg>
         </div>
+        <div class="preloader-text">Xiamen Foods & Agro</div>
+      </div>
+    </div>
+
+    <header>
+      <div class="container">
+        <div
+          class="logo"
+          onclick="window.location.href='index.html'"
+          style="cursor: pointer"
+        >
+          <img src="assets/images/logo.png" alt="Xiamen Agro Logo" />
+          <span>Xiamen Agro</span>
+        </div>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button
+          class="cta-button desktop-cta"
+          onclick="window.location.href='apply.html'"
+        >
+          Book a Call
+        </button>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
     </header>
 
     <div class="mobile-nav">
-        <div class="mobile-nav-container">
-            <div class="close-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 16 16" app="ikonik" class="ikonik-6pjwv"><path fill="currentColor" d="m9.414 8 5.293-5.293a1 1 0 1 0-1.414-1.414L8 6.586 2.707 1.293a1 1 0 0 0-1.414 1.414L6.586 8l-5.293 5.293a1 1 0 1 0 1.414 1.414L8 9.414l5.293 5.293a1 1 0 0 0 1.414-1.414L9.414 8Z" app="ikonik" class="path-q31w7i"></path></svg>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <button class="cta-button mobile-cta"  onclick="window.location.href='apply.html'">Book a Call</button>
+      <div class="mobile-nav-container">
+        <div class="close-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 16 16"
+            app="ikonik"
+            class="ikonik-6pjwv"
+          >
+            <path
+              fill="currentColor"
+              d="m9.414 8 5.293-5.293a1 1 0 1 0-1.414-1.414L8 6.586 2.707 1.293a1 1 0 0 0-1.414 1.414L6.586 8l-5.293 5.293a1 1 0 1 0 1.414 1.414L8 9.414l5.293 5.293a1 1 0 0 0 1.414-1.414L9.414 8Z"
+              app="ikonik"
+              class="path-q31w7i"
+            ></path>
+          </svg>
         </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <button
+          class="cta-button mobile-cta"
+          onclick="window.location.href='apply.html'"
+        >
+          Book a Call
+        </button>
+      </div>
     </div>
 
     <main>
-        <section class="page-hero">
-            <div class="container">
-                <h1>Blog</h1>
-                <p class="breadcrumb"><a href="index.html">Home</a> / Blog</p>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Blog</h1>
+          <p class="breadcrumb"><a href="index.html">Home</a> / Blog</p>
+        </div>
+      </section>
+
+      <section class="page-content">
+        <div class="container">
+          <section class="blog-posts">
+            <h2>Latest Articles</h2>
+            <p class="section-subheading">
+              Stay updated with the latest news, insights, and tips from the
+              agricultural world and Xiamen Agro.
+            </p>
+            <div class="blog-grid">
+              <!-- Blog posts will be loaded dynamically from blog-posts.json -->
             </div>
-        </section>
+          </section>
 
-        <section class="page-content">
-            <div class="container">
-                <section class="blog-posts">
-                    <h2>Latest Articles</h2>
-                    <p class="section-subheading">Stay updated with the latest news, insights, and tips from the agricultural world and Xiamen Agro.</p>
-                    <div class="blog-grid">
-                        <!-- Blog posts will be loaded dynamically from blog-posts.json -->
-                    </div>
-                </section>
-
-                <!-- Potential sidebar for categories, tags, or recent posts -->
-                <!-- <aside class="blog-sidebar">
+          <!-- Potential sidebar for categories, tags, or recent posts -->
+          <!-- <aside class="blog-sidebar">
                     <h3>Categories</h3>
                     <ul>
                         <li><a href="#">Category 1</a></li>
                         <li><a href="#">Category 2</a></li>
                     </ul>
                 </aside> -->
-            </div>
-        </section>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="main-footer-content">
-                <div class="footer-col footer-brand">
-                    <div class="logo" onclick="window.location.href='index.html'" style="cursor:pointer;">
-                        <img src="assets/images/logo.png" alt="Xiamen Agro Logo">
-                         <span>Xiamen Agro</span>
-                    </div>
-                    <p>Explore smarter farming solutions at Cultiva. Join us in revolutionizing agriculture with technology, sustainability, and innovation.</p>
-                     <button class="cta-button">Subscribe our Newsletter</button>
-                </div>
-                <div class="footer-col footer-explore">
-                    <h3>Quicklinks</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                         <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-support">
-                    <h3>Support</h3>
-                     <ul>
-                        <li><a href="#">Licenses</a></li>
-                        <li><a href="#">Terms &amp; Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="sitemap.html">Sitemap</a></li>
-                    </ul>
-                </div>
-                 <div class="footer-col footer-contact">
-                    <h3>Reach Us</h3>
-                     <ul>
-                        <li>3B Elegba Festival Drive, ONIRU LAGOS</li>
-                        <li><a href="mailto:info@xiamenagro.com">Email Us</a></li>
-                        <li><a href="contact.html">Send us Feedback</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-social">
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/company/xiamen-agro/" aria-label="LinkedIn" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-                        <a href="https://wa.me/2348070454584" aria-label="WhatsApp" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.668 4.607 1.938 6.563L4 29l7.688-1.938A12.93 12.93 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.516-5.594-1.5l-.406-.25-4.5 1.125 1.188-4.375-.25-.406A9.96 9.96 0 0 1 6 15c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.406-7.594c-.297-.148-1.758-.867-2.031-.965-.273-.098-.47-.148-.668.148-.195.297-.766.965-.94 1.164-.172.195-.344.223-.641.074-.297-.148-1.254-.463-2.39-1.477-.883-.788-1.48-1.762-1.652-2.059-.172-.297-.018-.457.13-.605.133-.132.297-.344.445-.516.148-.172.197-.297.297-.495.098-.199.049-.371-.025-.52-.074-.148-.668-1.613-.914-2.211-.242-.58-.487-.5-.668-.508l-.57-.01c-.195 0-.52.074-.793.371-.273.297-1.04 1.016-1.04 2.477 0 1.461 1.065 2.875 1.213 3.074.148.199 2.099 3.207 5.086 4.371.711.307 1.264.49 1.697.627.713.227 1.362.195 1.875.119.572-.084 1.758-.719 2.008-1.414.25-.695.25-1.289.174-1.414-.074-.125-.273-.199-.57-.344z" fill="#25D366"/></svg></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="main-footer-content">
+          <div class="footer-col footer-brand">
+            <div
+              class="logo"
+              onclick="window.location.href='index.html'"
+              style="cursor: pointer"
+            >
+              <img src="assets/images/logo.png" alt="Xiamen Agro Logo" />
+              <span>Xiamen Agro</span>
             </div>
-             <div class="footer-bottom">
-                <p>&copy; 2025 Xiamen Agro Limited. All rights reserved.</p>
-                <p>Powered by <a href="https://www.ajosedamilare.com/" target="_blank">Ajose Damilare</a></p>
+            <p>
+              Explore smarter farming solutions at Cultiva. Join us in
+              revolutionizing agriculture with technology, sustainability, and
+              innovation.
+            </p>
+            <button class="cta-button">Subscribe our Newsletter</button>
+          </div>
+          <div class="footer-col footer-explore">
+            <h3>Quicklinks</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-support">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Licenses</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-contact">
+            <h3>Reach Us</h3>
+            <ul>
+              <li>3B Elegba Festival Drive, ONIRU LAGOS</li>
+              <li><a href="mailto:info@xiamenagro.com">Email Us</a></li>
+              <li><a href="contact.html">Send us Feedback</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-social">
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/company/xiamen-agro/"
+                aria-label="LinkedIn"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-linkedin"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle></svg
+              ></a>
+              <a
+                href="https://wa.me/2348070454584"
+                aria-label="WhatsApp"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M16 3C9.373 3 4 8.373 4 15c0 2.385.668 4.607 1.938 6.563L4 29l7.688-1.938A12.93 12.93 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.91-.516-5.594-1.5l-.406-.25-4.5 1.125 1.188-4.375-.25-.406A9.96 9.96 0 0 1 6 15c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.406-7.594c-.297-.148-1.758-.867-2.031-.965-.273-.098-.47-.148-.668.148-.195.297-.766.965-.94 1.164-.172.195-.344.223-.641.074-.297-.148-1.254-.463-2.39-1.477-.883-.788-1.48-1.762-1.652-2.059-.172-.297-.018-.457.13-.605.133-.132.297-.344.445-.516.148-.172.197-.297.297-.495.098-.199.049-.371-.025-.52-.074-.148-.668-1.613-.914-2.211-.242-.58-.487-.5-.668-.508l-.57-.01c-.195 0-.52.074-.793.371-.273.297-1.04 1.016-1.04 2.477 0 1.461 1.065 2.875 1.213 3.074.148.199 2.099 3.207 5.086 4.371.711.307 1.264.49 1.697.627.713.227 1.362.195 1.875.119.572-.084 1.758-.719 2.008-1.414.25-.695.25-1.289.174-1.414-.074-.125-.273-.199-.57-.344z"
+                    fill="#25D366"
+                  /></svg
+              ></a>
             </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Xiamen Agro Limited. All rights reserved.</p>
+          <p>
+            Powered by
+            <a href="https://www.ajosedamilare.com/" target="_blank"
+              >Ajose Damilare</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
 
     <div class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h3>Subscribe to Our Newsletter</h3>
-            <p>Stay updated with our latest news and offers.</p>
-            <form id="newsletter-form">
-                <input type="email" id="email" placeholder="Enter your email" required>
-                <button type="submit" class="cta-button">Subscribe</button>
-            </form>
-        </div>
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Stay updated with our latest news and offers.</p>
+        <form id="newsletter-form">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="cta-button">Subscribe</button>
+        </form>
+      </div>
     </div>
 
-    <button class="back-to-top">
-        &#x2191;
-    </button>
+    <button class="back-to-top">&#x2191;</button>
 
     <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      var notice = document.getElementById('cookie-notice');
-      if (!localStorage.getItem('cookieConsent')) {
-        notice.style.display = 'flex';
-      }
-      document.getElementById('accept-cookies').onclick = function() {
-        localStorage.setItem('cookieConsent', 'accepted');
-        notice.style.display = 'none';
-      };
-      document.getElementById('reject-cookies').onclick = function() {
-        localStorage.setItem('cookieConsent', 'rejected');
-        notice.style.display = 'none';
-      };
-    });
+      window.addEventListener("DOMContentLoaded", function () {
+        var notice = document.getElementById("cookie-notice");
+        if (!localStorage.getItem("cookieConsent")) {
+          notice.style.display = "flex";
+        }
+        document.getElementById("accept-cookies").onclick = function () {
+          localStorage.setItem("cookieConsent", "accepted");
+          notice.style.display = "none";
+        };
+        document.getElementById("reject-cookies").onclick = function () {
+          localStorage.setItem("cookieConsent", "rejected");
+          notice.style.display = "none";
+        };
+      });
     </script>
 
     <script src="script.js"></script>
     <script>
-        // Load blog posts dynamically
-        document.addEventListener('DOMContentLoaded', () => {
-            const blogGrid = document.querySelector('.blog-grid');
-            
-            fetch('blog-posts.json')
-                .then(response => response.json())
-                .then(posts => {
-                    // Sort posts by date (newest first)
-                    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-                    
-                    posts.forEach(post => {
-                        const postElement = document.createElement('a');
-                        postElement.href = `blog-detail.html?id=${post.id}`;
-                        postElement.className = 'blog-post-item';
-                        
-                        postElement.innerHTML = `
+      // Load blog posts dynamically
+      document.addEventListener("DOMContentLoaded", () => {
+        const blogGrid = document.querySelector(".blog-grid");
+
+        fetch("blog-posts.json")
+          .then((response) => response.json())
+          .then((posts) => {
+            // Sort posts by date (newest first)
+            posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            posts.forEach((post) => {
+              const postElement = document.createElement("a");
+              postElement.href = `blog-detail.html?id=${post.id}`;
+              postElement.className = "blog-post-item";
+
+              postElement.innerHTML = `
                             <img src="${post.image}" alt="${post.title}">
                             <div class="post-content">
                                 <div class="post-tags">
-                                    ${post.tags.map(tag => `<span>${tag}</span>`).join('')}
+                                    ${post.tags
+                                      .map((tag) => `<span>${tag}</span>`)
+                                      .join("")}
                                 </div>
                                 <h3>${post.title}</h3>
-                                <p>${post.content.split('</p>')[0].replace('<p>', '')}...</p>
+                                <p>${post.content
+                                  .split("</p>")[0]
+                                  .replace("<p>", "")}...</p>
                                 <div class="post-meta">
                                     <div class="author-info">
-                                        <div class="author-avatar">${post.author_avatar_initial}</div>
-                                        <span class="author-name">${post.author}</span>
-                                        <span class="post-date">${post.date}</span>
+                                        <div class="author-avatar">${
+                                          post.author_avatar_initial
+                                        }</div>
+                                        <span class="author-name">${
+                                          post.author
+                                        }</span>
+                                        <span class="post-date">${
+                                          post.date
+                                        }</span>
                                     </div>
                                 </div>
                             </div>
                         `;
-                        
-                        blogGrid.appendChild(postElement);
-                    });
-                })
-                .catch(error => {
-                    console.error('Error loading blog posts:', error);
-                    blogGrid.innerHTML = '<p class="error-message">Error loading blog posts. Please try again later.</p>';
-                });
-        });
+
+              blogGrid.appendChild(postElement);
+            });
+          })
+          .catch((error) => {
+            console.error("Error loading blog posts:", error);
+            blogGrid.innerHTML =
+              '<p class="error-message">Error loading blog posts. Please try again later.</p>';
+          });
+      });
     </script>
-</body>
-</html> 
+  </body>
+</html>

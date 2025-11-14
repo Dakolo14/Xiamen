@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
   if (preloader) {
     setTimeout(() => {
       preloader.classList.add("hidden");
-    }, 2000); // Show preloader for at least 2 seconds
+    }, 800); // Show preloader for 0.8 seconds
   }
 });
 

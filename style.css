@@ -354,8 +354,11 @@ nav ul li a:hover {
 
 .solution-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
-  gap: 25px; /* Space between cards */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* 2 columns layout for better readability */
+  gap: 30px; /* Space between cards */
   max-width: 1200px;
   margin: 0 auto;
   padding: 32px 0;
@@ -367,7 +370,7 @@ nav ul li a:hover {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 20px;
   padding: 0;
-  overflow: visible;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -539,7 +542,7 @@ nav ul li a:hover {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border-radius: 20px;
   padding: 0;
-  overflow: visible;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1850,7 +1853,8 @@ footer {
 
 .why-choose-us-image img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px; /* Match other section styles */
 }
 
@@ -1877,6 +1881,26 @@ footer {
   line-height: 1.6;
   margin-bottom: 30px;
   color: #555;
+}
+
+.why-choose-us-content .why-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.why-choose-us-content .why-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.why-choose-us-content .why-list li svg {
+  flex-shrink: 0;
+  color: #28a745;
+  margin-top: 2px;
 }
 
 .why-choose-us-items .why-choose-us-item {
